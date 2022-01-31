@@ -10,7 +10,6 @@ It is a online client side Image Compressor . Made with HTML, CSS, JS
 
 <br/><br/>
 
-
 ## Steps to Run/Build the Project
 <br/>
 
@@ -23,13 +22,13 @@ It is a online client side Image Compressor . Made with HTML, CSS, JS
 <p align="center">
  <img  src="https://user-images.githubusercontent.com/39475600/150677579-08537f8e-f18c-4aee-be27-01f84adf8da2.png"/>
 </p>
-
-
 </td>
-
-
-
 </tr>
- </table>
+</table>
 
+<br/>
 
+## Contributors
+<br/>
+
+* shibam-naskar
