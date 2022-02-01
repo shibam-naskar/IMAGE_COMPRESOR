@@ -30,6 +30,9 @@ function ImageTobase64(file) {
     reader.readAsDataURL(file);
     reader.onload = () => {
       console.log(reader.result);
+      document.querySelector('.drop-zone__prompt').remove();
+      var preview = document.getElementById("preview");
+      preview.setAttribute('src',reader.result);
     };
   }
 }
