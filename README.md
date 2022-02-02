@@ -33,3 +33,12 @@ It is a online client side Image Compressor . Made with HTML, CSS, JS
  </table>
 
 
+
+
+# Contributors
+
+* ![contri_1](https://user-images.githubusercontent.com/84222590/152148711-f40e2218-5016-48e9-af0a-8545ec453e17.jpeg) shibam-naskar
+
+* ![contri_2](https://user-images.githubusercontent.com/84222590/152148738-a7bcc5c6-f7a3-4df7-8c36-df5d997c76e9.png)  ATUL6026
+
+
