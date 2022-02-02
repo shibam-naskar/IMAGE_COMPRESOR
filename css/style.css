@@ -63,3 +63,11 @@
     align-items: center;
     justify-content: center;
   }
+
+  #details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    visibility: hidden;
+    margin-top: 20%;
+  }
