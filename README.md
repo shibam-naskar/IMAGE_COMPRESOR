@@ -38,8 +38,8 @@ It is a online client side Image Compressor . Made with HTML, CSS, JS
 
 # Contributors
 
-* ![contri_1](https://user-images.githubusercontent.com/84222590/152149729-acd59bc9-97f9-48c5-80a2-e15252d0d2cc.jpeg) **shibam-naskar**
+* ![contri_1](https://user-images.githubusercontent.com/84222590/152149729-acd59bc9-97f9-48c5-80a2-e15252d0d2cc.jpeg)  ******shibam-naskar******
 
-* ![contri_2](https://user-images.githubusercontent.com/84222590/152149842-bd3a22da-bfef-47d1-8eb8-08fcc273cd33.png) ** ATUL6026**
+* ![contri_2](https://user-images.githubusercontent.com/84222590/152149842-bd3a22da-bfef-47d1-8eb8-08fcc273cd33.png)      ** ATUL6026**
 
 
