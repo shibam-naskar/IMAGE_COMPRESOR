@@ -79,3 +79,126 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+.footer{
+  margin-top: 20px;
+background:linear-gradient(245deg,rgba(15, 27, 197, 0.897),rgb(51, 60, 179),#009578);
+border-top-left-radius: 10%;
+border-top-right-radius: 100%;
+animation: animate 10s linear infinite ;
+
+}
+.footer1{
+  margin-top: 20px;
+background:#009578;
+border-top-left-radius: 70%;
+border-top-right-radius: 10%;
+animation: animate1 10s linear infinite ;
+}
+@keyframes animate {
+  0%{
+    border-top-left-radius: 10%; 
+  }
+ 50%{
+  border-top-left-radius: 70%;
+  
+  border-top-right-radius: 10%;
+ }
+  100%{
+    border-top-right-radius: 0%; 
+    border-top-left-radius: 100%;
+  }
+}
+@keyframes animate1 {
+  0%{
+    /* border-top-left-radius: 10%;  */
+  }
+ 50%{
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%; 
+  background:#009578;
+ }
+  100%{
+    
+    border-top-left-radius: 0%;
+    border-top-right-radius: 50%;
+    background: linear-gradient(50deg,rgba(47, 104, 131, 0.486),#009578);
+  }
+}
+.headline{
+font-family: 'Playfair Display', serif;
+font-family: 'Quintessential', cursive;
+font-weight: bolder;
+color:rgb(1, 26, 31);
+
+}
+.center{
+text-align:center;
+padding: 12px 12px 0px 12px;
+}
+.copy{
+ margin-top: 10px;
+}
+.terms{
+ color:rgb(33, 33, 58);
+}
+.cent{
+margin-left: 90%;
+
+}
+input[type="checkbox"]{
+ position: relative;
+ width: 40px;
+ height: 20px;
+ -webkit-appearance: none;
+ background-color: black;
+ outline: none;
+ border-radius:   15px;
+}
+input:checked[type="checkbox"]{
+background-color: rgb(219, 205, 199);
+}
+input[type="checkbox"]:before{
+ content: ' ';
+ width:20px;
+ height:20px;
+ border-radius: 20px;
+ position: absolute;
+ top:0;
+ left:0;
+ background-color: rgb(3, 54, 41);
+ transform: scale(1.1);
+ transition: 0.5s;
+}
+input:checked[type="checkbox"]:before{
+ left:20px;
+}
+@media (max-width:380px) {
+input[type="checkbox"]{
+  position: relative;
+  width: 20px;
+  height: 10px;
+  -webkit-appearance: none;
+  background-color: black;
+  outline: none;
+  border-radius:   15px;
+}
+input:checked[type="checkbox"]{
+background-color: rgb(219, 205, 199);
+}
+input[type="checkbox"]:before{
+  content: ' ';
+  width:10px;
+  height:10px;
+  border-radius: 20px;
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: rgb(3, 54, 41);
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+input:checked[type="checkbox"]:before{
+  left:10px;
+}
+}
