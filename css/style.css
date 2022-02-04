@@ -202,3 +202,18 @@ background-color: rgb(219, 205, 199);
     left:10px;
   }
  }
+
+ #details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  visibility: hidden;
+  margin-top: 20%;
+}
+
+#input-file, #output-file {
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
