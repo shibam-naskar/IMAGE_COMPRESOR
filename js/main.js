@@ -36,6 +36,8 @@ function ImageTobase64(file) {
       preview.setAttribute('src',reader.result);
 
       document.getElementById('details').style.visibility ='visible';
+      //similarly add image to #output-file
+      document.getElementById('input-file').style.backgroundImage="url("+reader.result+")";
       window.scrollBy({ 
         top: document.body.scrollHeight,
         left: 0,
