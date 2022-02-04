@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quintessential&display=swap');
 *{
   padding: 0;
@@ -10,6 +11,17 @@
     color: #009578;
     margin-top: 100px;
     margin-bottom: 100px;
+}
+
+.navigation{
+ 
+  color: #009578;
+  background-color :white;
+  padding: 7px;
+  /* margin:4px; */
+  padding-left: 12px;
+  /* border-radius: 30px ; */
+
 }
 
 .drop-zone {
