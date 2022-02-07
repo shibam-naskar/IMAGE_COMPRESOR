@@ -4,11 +4,23 @@
     <title>Drag and Drop File Upload</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+     <!--Bootstrap-->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="shortcut icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+    <header>
+        <nav class="navigation bar">
+            <div>
+
+                <h2>Image-Compresor</h2>
+
+            </div>
+        </nav>
+    </header>
     <div class="main_div">
         <h1 class="title">IMAGE COMPRESSOR</h1>
         <div class="drop-zone">
@@ -17,8 +29,43 @@
             <img src="" alt="" id="preview">
         </div>
     </div>
+
 <footer >
     <div class="footer" >
+
+
+    <!--Cards of the input and output file-->
+    <div id="details">
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" id="input-file" style="width:200px; height: 200px">
+            <div class="card-body">
+              <h5 class="card-title">Input Image</h5>
+              <p class="input-modify">Modified On: </p>
+              <p class="input-name">File Name: </p>
+              <p class="input-size">File Size: </p>
+
+              <button class="btn btn-primary">Download</button>
+            </div>
+          </div>
+
+          <div class="card" id="output-file" style="width: 18rem;">
+            <img class="card-img-top" id="output-file" style="width:200px; height: 200px">
+            <div class="card-body">
+              <h5 class="card-title">Output Image</h5>
+              <p class="ouput-modify">Modified On: </p>
+              <p class="ouput-name">File Name: </p>
+              <p class="ouput-size">File Size: </p>
+
+              <button class="btn btn-primary">Download</button>
+            </div>
+          </div>
+
+    </div>
+
+    
+<footer class="footer"  >
+
    <div class="footer1">
        <div class="center">
     <h3 class="headline">IMAGE COMPRESSOR</h3>
@@ -30,6 +77,17 @@
 </div>
 </div>
 </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
     <script src="./js/main.js"></script>
 </body>

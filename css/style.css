@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quintessential&display=swap');
 *{
   padding: 0;
@@ -17,6 +18,17 @@ body{
     color: #009578;
     margin-top: 100px;
     margin-bottom: 100px;
+}
+
+.navigation{
+ 
+  color: #009578;
+  background-color :white;
+  padding: 7px;
+  /* margin:4px; */
+  padding-left: 12px;
+  /* border-radius: 30px ; */
+
 }
 
 .drop-zone {
@@ -196,3 +208,18 @@ background-color: rgb(219, 205, 199);
     left:10px;
   }
  }
+
+ #details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  visibility: hidden;
+  margin-top: 20%;
+}
+
+#input-file, #output-file {
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
