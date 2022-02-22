@@ -59,3 +59,51 @@ function ImageTobase64(file) {
     };
   }
 }
+
+let inputFile = document.getElementById('inputFile');
+let selectTag = document.getElementById('selectTag');
+let outputImage = document.getElementById('outputImage');
+let compressBtn = document.getElementById('compressBtn');
+let downloadBtn = document.getElementById('downloadBtn');
+let srcEncoded;
+
+function compress() {
+    let file = inputFile.files[0];
+    if (!file) return;
+
+    let reader = new FileReader();
+
+    reader.readAsDataURL(file);
+
+    reader.onload = function (event) {
+
+        let imgElement = document.createElement('img');
+        imgElement.src = event.target.result;
+
+        imgElement.onload = function (e) {
+            let canvas = document.createElement('canvas');
+            let scaleSize = selectTag.value;
+
+            canvas.width = scaleSize * e.target.width;
+            canvas.height = scaleSize * e.target.height;
+
+            let ctx = canvas.getContext('2d');
+            ctx.drawImage(e.target, 0, 0, canvas.width, canvas.height);
+
+            srcEncoded = ctx.canvas.toDataURL(e.target);
+            outputImage.src = srcEncoded;
+        }
+
+    }
+}
+
+compressBtn.addEventListener('click', () => {
+    compress();
+})
+
+downloadBtn.addEventListener('click', () => {
+    let a = document.createElement('a');
+    a.href = srcEncoded;
+    a.download = "pConvert.png";
+    a.click();
+})
