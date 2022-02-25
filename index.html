@@ -25,8 +25,25 @@
         <h1 class="title">IMAGE COMPRESSOR</h1>
         <div class="drop-zone">
             <span class="drop-zone__prompt">Drop image file here or click to upload</span>
-            <input type="file" name="myFile" class="drop-zone__input">
+            <input type="file" accept=".png, .jpg, .jpeg" class="drop-zone__input" id="inputFile">
             <img src="" alt="" id="preview">
+        </div>
+        <div class="selector">
+            <label for="selectTag">Select&nbsp;compression</label>
+            <select name="" id="selectTag">
+                <option value="0.5">50%</option>
+                <option value="0.4">40%</option>
+                <option value="0.3">30%</option>
+                <option value="0.2">20%</option>
+                <option value="0.1">10%</option>
+            </select>
+            <div>
+                <img src="" alt="" width="200px" id="outputImage">
+            </div>
+            <div>
+                <button id="compressBtn">Compress</button>
+                <button id="downloadBtn">Download</button>
+            </div>
         </div>
     </div>
 
