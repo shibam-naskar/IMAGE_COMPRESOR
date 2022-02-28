@@ -4,10 +4,12 @@
     <title>Drag and Drop File Upload</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-     <!--Bootstrap-->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -15,21 +17,32 @@
     <header>
         <nav class="navigation bar">
             <div>
-               
-                <h2>Image-Compresor</h2>
+                <div class="top-bar">
+                    <div class="header">
+                        <h2>Image-Compressor</h2>
+                    </div>
 
+                    <div class="icon"><i class="fa fa-home" aria-hidden="true"></i>&nbsp; Home</div>
+                    <div class="icon"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp; Login</div>
+                    <div class="icon"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp; Sign Up</div>
+
+
+                </div>
             </div>
         </nav>
     </header>
     <div class="main_div">
         <h1 class="title">IMAGE COMPRESSOR</h1>
+        <div class="about-section">This online image optimizer uses a smart combination of the best optimization and
+            lossy compression algorithms to shrink JPEG, GIF and PNG images to the minimum possible size while keeping
+            the required level of quality.</div>
         <div class="drop-zone">
             <span class="drop-zone__prompt">Drop image file here or click to upload</span>
             <input type="file" accept=".png, .jpg, .jpeg" class="drop-zone__input" id="inputFile">
             <img src="" alt="" id="preview">
         </div>
         <div class="selector">
-            <label for="selectTag">Select&nbsp;compression</label>
+            <label for="selectTag">Select&nbsp;compression&nbsp;&nbsp;</label>
             <select name="" id="selectTag">
                 <option value="0.5">50%</option>
                 <option value="0.4">40%</option>
@@ -40,38 +53,54 @@
             <div>
                 <img src="" alt="" width="200px" id="outputImage">
             </div>
-            <div>
+            <div class="box">
                 <button id="compressBtn">Compress</button>
                 <button id="downloadBtn">Download</button>
             </div>
         </div>
     </div>
 
-<footer >
-    <div class="footer" >
+    <footer>
+        <div class="links">
+            <h5>Some Useful Links</h5>
+        </div>
+        <div class="footer1">
+            <div href="#" class="about-us"> About Us&nbsp;&nbsp;|&nbsp;&nbsp;
+            </div>
+            <div href="#" class="contributor"> Contributor List&nbsp;&nbsp;|&nbsp;&nbsp;
+            </div>
+            <div href="#" class="icon-c">Contact Us&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </div>
+            <div class="icons-social-media">
+                <i class="fa fa-github" aria-hidden="true">&nbsp;&nbsp;&nbsp;</i>
+                <i class="fa fa-linkedin-square" aria-hidden="true">&nbsp;&nbsp;&nbsp;</i>
+                <i class="fa fa-twitter" aria-hidden="true">&nbsp;&nbsp;&nbsp;</i>
+            </div>
 
-   <div class="footer1">
-       <div class="center">
-    <h3 class="headline">IMAGE COMPRESSOR</h3>
-    <p class="copy"><small>&copy; 2022 JWOC. All rights reserved.| <a href="#" class="terms">Terms and Privacy</a></small></p>
-</div>
-    <div class="cent">
-       <input type="checkbox" name="">
-   </div>
-</div>
-</div>
-</footer>
+        </div>
+        <div class="footer">
+            <div class="center">
+                <h3 class="headline">IMAGE COMPRESSOR</h3>
+                <p class="copy"><small>&copy; 2022 JWOC. All rights reserved.| <a href="#" class="terms">Terms and
+                            Privacy</a></small></p>
+            </div>
+            <div class="cent">
+                <input type="checkbox" name="">
+            </div>
+        </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
     <script src="./js/main.js"></script>
 </body>
